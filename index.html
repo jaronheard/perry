@@ -9,9 +9,27 @@
     <title>perry</title>
   </head>
   <body class="body">
-      <header class="snacks">
-        <h1>"SLORTING SNACKS"</h1>
-      </header>
-      <img class="perry" src="images/perry.jpeg" />
+    <header class="snacks">
+      <h1>"SLORTING SNACKS"</h1>
+    </header>
+    <div class="perry">
+      <img src="images/perry.jpeg" />
+      <label>
+        <input type="checkbox" onchange="togglePartyMode()" />
+        Party Mode (seizure warning)
+      </label>
+    </div>
+
+    <script>
+      var letUsParty = false;
+      function togglePartyMode() {
+        letUsParty = !letUsParty;
+        if (letUsParty) {
+          document.body.classList.add("partying");
+        } else {
+          document.body.classList.remove("partying");
+        }
+      }
+    </script>
   </body>
 </html>

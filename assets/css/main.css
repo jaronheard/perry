@@ -440,8 +440,125 @@ hr {
   width: 100%;
 }
 
+.perry img {
+  display: block;
+  margin: auto;
+}
+
+.perry label {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.4em;
+}
+
 .snacks {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: block;
+}
+
+/* PARTY MODE!!!!! */
+
+.partying.body {
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 1s ease infinite;
+  -z-animation: rainbow 1s ease infinite;
+  -o-animation: rainbow 1s ease infinite;
+  animation: rainbow 1s ease infinite;
+}
+
+.partying h1,
+.partying h2,
+.partying h3,
+.partying h4,
+.partying h5,
+.partying h6,
+.partying label {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.partying .perry img {
+  animation: perry-dance 0.8s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes perry-dance {
+  from,
+  49% {
+    transform-origin: -50% 100%;
+  }
+  50%,
+  75%,
+  to {
+    transform-origin: 150% 100%;
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
 }
