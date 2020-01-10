@@ -497,6 +497,14 @@ hr {
   animation: perry-dance 0.8s infinite alternate ease-in-out;
 }
 
+.perry .airhorn {
+  display: none;
+}
+
+.partying .perry .airhorn {
+  display: block;
+}
+
 @-webkit-keyframes rainbow {
   0% {
     background-position: 0% 82%;
