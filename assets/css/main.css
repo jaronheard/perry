@@ -425,13 +425,23 @@ hr {
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
-  width: max-content;
+  display: grid;
   margin: 0 auto;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 10% auto auto 10%;
+  justify-items: center;
+  align-items: center;
 }
 
-.image {
-  margin: 0 2em 4em 2em;
+.perry {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: block;
+  width: 100%;
+}
+
+.snacks {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
   display: block;
 }
