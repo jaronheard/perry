@@ -424,6 +424,10 @@ hr {
   border-bottom-color: #666666;
 }
 
+* {
+  touch-action: manipulation;
+}
+
 .body {
   display: grid;
   margin: 0 auto;
