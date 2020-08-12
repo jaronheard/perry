@@ -462,13 +462,14 @@ hr {
 .button {
   color: white;
   text-shadow: 2px 2px black;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   border-radius: 0%;
   padding: 0.2em;
+  margin: 0.2em;
   display: inline-block;
   position: absolute;
-  bottom: 2em;
+  bottom: 8px;
   width: 25%;
   left: 37.5%;
     background: linear-gradient(
@@ -489,6 +490,10 @@ hr {
   -z-animation: rainbow 4s ease infinite;
   -o-animation: rainbow 4s ease infinite;
   animation: rainbow 4s ease infinite;
+}
+
+.button:active {
+  transform: translateY(4px);
 }
 
 /* PARTY MODE!!!!! */
@@ -536,6 +541,23 @@ hr {
 .partying .perry .airhorn {
   display: block;
 }
+
+.loser {
+  display: inline-block;
+}
+
+.partying .loser {
+  display: none;
+}
+
+.partyer {
+  display: none;
+}
+
+.partying .partyer {
+  display: inline-block;
+}
+
 
 @-webkit-keyframes rainbow {
   0% {
