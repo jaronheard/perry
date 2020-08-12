@@ -17,10 +17,11 @@
       <img src="images/perry.jpeg" />
       <label>
         <input type="checkbox" onchange="togglePartyMode()" />
-        Party Mode (seizure warning)
-      </label>
-      <label class="airhorn">
-        <button onclick="playAirhorn()">AIRHORN!!</button>
+        PARTY MODE <span class="warning"
+          >(SEIZURE WARNING)</span><span class="airhorn">
+            <button class="button" onclick="playAirhorn()">🔊</button>
+          </span
+        >
       </label>
     </div>
 
@@ -29,11 +30,11 @@
 
       var music = new Howl({
         src: ["assets/perry-party.mp3"],
-        loop: true
+        loop: true,
       });
 
       var airhorn = new Howl({
-        src: ["assets/instantrapairhorn.mp3"]
+        src: ["assets/instantrapairhorn.mp3"],
       });
 
       function togglePartyMode() {
